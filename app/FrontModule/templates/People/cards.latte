@@ -1,0 +1,40 @@
+{* Latte template *}
+
+{block content}
+{control cardForm}
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <div class="card-header"> Discover new genres {{genre}}</div>
+    </div>
+
+    <div class="col-4 text-center">
+      <div class="card border-secondary mb-3" style="">
+        <img class="card-img-top img-responsive full-width circle-img rounded-circle" src="{{rec['artpath']}}" alt="{{rec['name']}}"> 
+        <div class="card-block">
+          <div class="card-body">
+            <p class="card-title text-center">
+              <small>{{rec["name"]}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="col-4 text-center">
+      <div class="card border-secondary mb-3" style="">
+        <img class="card-img-top img-responsive full-width circle-img rounded-circle" src="{{rec['artpath']}}" alt="{{rec['name']}}"> 
+        <div class="card-block">
+          <div class="card-body">
+            <p class="card-title text-center">
+              <small>{{rec["name"]}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+  </div>
+</div>
